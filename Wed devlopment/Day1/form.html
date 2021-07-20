@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="process-form.html" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name"/>
+
+        <label for="age">Age</label>
+        <input type="text" id="age" name="age"/>
+
+        <label for="password">password</label>
+        <input type="password" id="password" name="password"/> 
+
+        <label for="comment">comment</label>
+        <textarea id="comment" name="comment"></textarea>
+
+        <label for="cities">cities</label>
+        <select id="cities" name="cities" multiple="multiple">  
+            <option value="Calicut">Kozhikode</option>
+            <option value="malappuram">Malappuram"</option>
+            <option value="kochi">Ernakulam</option>
+        </select>
+
+        <label><input type="checkbox" Name="Courses" value="web">Web development </label>
+        <label><input type="checkbox" Name="Courses" value="python">Python development </label>
+        <label><input type="checkbox" Name="Courses" value="ML">ML development </label>
+
+        <label><input type="radio" Name="Courses" value="web">Web development </label>
+        <label><input type="radio" Name="Courses" value="python">Python development </label>
+        <label><input type="radio" Name="Courses" value="ML">ML development </label>
+
+
+        <input type="submit" value="sign up">
+        <input type="reset" value="reset the form" />
+    </form>
+</body>
+</html>
