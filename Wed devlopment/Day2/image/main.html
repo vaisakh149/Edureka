@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Semantic Element</h1>
+    <div class="figure">
+        <h2>figure: To display set of figers</h2>
+        <figure>
+            <img src="image/img.jpg" alt="roase" width="304" height="228">
+            <figcaption>fig1.-- A view of Roase</figcaption> 
+        </figure>
+    </div>
+    <div class="mark">
+        <h2>mark</h2>
+        <p>It is same as the  mark attribitr in the but in html-5 it is made as tag for semantics <br> This is done to <mark>bring attention of the user to that part of the text</mark> </p>
+    </div>
+    <div>
+        <h2>Datalist</h2>
+        <form action="" method="get">
+            <input list="State" name="State">
+            <datalist id="State">
+                <option value="Kozhikode">of kerala</option>
+                <option value="Malappuram">of kerala</option>
+                <option value="Kannur">of kerala</option>
+                <option value="Kasaragod">of kerala</option>
+            </datalist>
+
+        </form>
+    </div>
+<div>
+    <h2>Form Element - output tag</h2>
+    <form action="demo_form.asp" id="numform" method="get" oninput="output.value=parseInt(first.value)*parseInt(second.value)">
+        <input type="number" id="first" name="first" value="50">*
+        <input type="number" id="second" name="second" value="50">=
+        <output name="output" for="first*second"></output>        
+    </form>
+    </div>
+    <div>
+        <form>
+            <input type="email" id="mail" name="mail" class="testbox" > 
+            <input type="submit" value="Default" class="testbox" > 
+            <input type="submit" value="fornovailidation" class="testbox" formnovalidate> 
+        </form>
+    </div>
+    <div>
+        <h2>Canvas</h2>
+        <canvas width=" 200" id="can" height="100" style="border: 1px solid black;"></canvas>
+        <canvas width=" 200" id="can2" height="100" style="border: 1px solid black;"></canvas>
+    </div>
+<script>
+    var cancas1=document.getElementById("can");
+    var context=cancas1.getContext("2d");
+    context.fillStyle= "#000dd0";
+    context.fillRect(0,0,200,100);
+    var cancas1=document.getElementById("can2");
+    var context2=cancas1.getContext("2d");
+    context2.moveTo(40,40);
+    context2.lineTo(200,500);
+    context2.stroke();
+</script>
+</body>
+</html>
