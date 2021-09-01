@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_selectors</title>
+    <style>
+        /* it select the has a particlar attribute set to a fixed value */
+        a[target=_blank]{
+            color: crimson;
+            text-decoration: none;
+        }
+
+        a[traget]{
+           font-size: 5em;
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- 
+        CSS Selectors
+        is, class, tag(first modul html)
+        combination of selectors
+        attribute
+        pseudo classes:first-clild, first-letter, first-line, :focus
+    -->
+    <a href="http://www.google.com">Google</a>
+    <a href="http://www.facebook.com" target="_blank">facebook</a>
+    <a href="http://www.twitter.com" target="_blank" >twitter</a>
+    <a href="http://www.medium.com">medium</a>
+    <a href="https://www.youtube.com/embed/tgbNymZ7vqY" target="my-iframe">youtube</a>
+    <iframe src="" name="my-iframe"></iframe>
+</body> 
+</html>
